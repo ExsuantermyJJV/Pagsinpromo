@@ -887,10 +887,7 @@ font-size: 1.3vh;
     display: flex;
     padding: 0.5vh 1% 1% 0;
   }
-  .cabAcordeon:hover{
-    cursor: pointer;
-    user-select: none;
-  }
+
   .cabAcordeon h2{
     font-family: sans-serif;
     width: 100%;
@@ -900,10 +897,7 @@ font-size: 1.3vh;
     padding-bottom: 1em;
     color: #ffffff;
   }
-  .cabAcordeon h2:hover{
-    color: #e5ff00;
-  }
-  
+
   
   .circulo{
     height: 20px;
