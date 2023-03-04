@@ -26,13 +26,22 @@ mainDiv.addEventListener('click', function(){
 
 
 
-    document.getElementById('dias').innerText = (5),
-    document.getElementById('horas').innerText = (12),
-    document.getElementById('minutos').innerText = (0),
-    document.getElementById('segundos').innerText = (0);
+   const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-      document.getElementById('diass').innerText = (5),
-    document.getElementById('horass').innerText = (12),
-    document.getElementById('minutoss').innerText = (0),
-    document.getElementById('segundoss').innerText = (0);
+let countDown = new Date('mar 23, 2023 16:38:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('dias').innerText = Math.floor(distance / (day)),
+        document.getElementById('horas').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutos').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('segundos').innerText = Math.floor((distance % (minute)) / second);
+
+    }, second)
+
 
