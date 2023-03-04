@@ -1649,7 +1649,7 @@ button a{
 
   .cabAcordeon{
     min-height: 5vh;
-    width: 60%;
+    width: 100%;
     display: flex;
     padding: 5vh 1% 1% 0;
 }
@@ -1680,7 +1680,7 @@ button a{
   @media (max-width: 850px) {
 
 	    .contenido{
-      width: 60%;
+      width: 100%;
       padding: 0 1% 5% 1%;
       color: #ffffff;
       font-weight: 700;
